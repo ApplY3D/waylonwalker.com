@@ -1,0 +1,41 @@
+---
+article_html: '<h4 id="great-morning">Great Morning</h4>
+
+  <p>Today is kicking off as a pretty amazing morning so far.  The whole family was
+  in a really happy mood, even right after waking up.  I enjoyed the start of sunrise
+  running around with Wyatt at the bus stop, and continuing now while writing my gratitude
+  and daily planning.  Even though I was 10 minutes or so behind getting out the door
+  this morning everything else has been going flawlessly, especially the most important
+  things; family, mind, mood, and gratitude.</p>'
+content: ''
+cover: ''
+date: 2019-01-11
+datetime: 2019-01-11 00:00:00+00:00
+description: Today is kicking off as a pretty amazing morning so far.  The whole family
+  was in a really happy mood, even right after waking up.  I enjoyed the start of
+  sunri
+long_description: Today is kicking off as a pretty amazing morning so far.  The whole
+  family was in a really happy mood, even right after waking up.  I enjoyed the start
+  of sunrise running around with Wyatt at the bus stop, and continuing now while writing
+  my gratitud
+now: 2022-05-07 21:32:25.890993
+path: pages/gratitude/gratitude_070.md
+slug: gratitude/gratitude_070
+status: draft
+super_description: Today is kicking off as a pretty amazing morning so far.  The whole
+  family was in a really happy mood, even right after waking up.  I enjoyed the start
+  of sunrise running around with Wyatt at the bus stop, and continuing now while writing
+  my gratitude and daily planning.  Even though I was 10 minutes or so behind getting
+  out the door this morning everything else has been going flawlessly, especially
+  the most important things; family, mind, mood, and gratitude. Today is kicking off
+  as a pretty am
+tags: []
+templateKey: gratitude
+title: Gratitude 070
+today: 2022-05-07
+year: 2019
+---
+
+#### Great Morning
+
+Today is kicking off as a pretty amazing morning so far.  The whole family was in a really happy mood, even right after waking up.  I enjoyed the start of sunrise running around with Wyatt at the bus stop, and continuing now while writing my gratitude and daily planning.  Even though I was 10 minutes or so behind getting out the door this morning everything else has been going flawlessly, especially the most important things; family, mind, mood, and gratitude.

@@ -1,0 +1,190 @@
+---
+content: ''
+cover: ''
+date: 2020-12-14
+datetime: 2020-12-14 00:00:00+00:00
+description: ?docstring ?docstring ??sourcecode ??sourcecode %run %run %debug %debug
+  %autoreload %autoreload %history %history autoformat autoformat %reset %reset !
+  ! Stop g
+long_description: ?docstring ?docstring ??sourcecode ??sourcecode %run %run %debug
+  %debug %autoreload %autoreload %history %history autoformat autoformat %reset %reset
+  ! ! Stop going to google everytime your stuck and stay in your workflow.  The Stop
+  going to google e
+now: 2022-05-07 21:32:25.894200
+path: pages/blog/ipython-ninjitsu.md
+slug: ipython-ninjitsu
+status: draft
+super_description: ?docstring ?docstring ??sourcecode ??sourcecode %run %run %debug
+  %debug %autoreload %autoreload %history %history autoformat autoformat %reset %reset
+  ! ! Stop going to google everytime your stuck and stay in your workflow.  The Stop
+  going to google everytime your stuck and stay in your workflow.  The Docstring not
+  enough for you use case.  I often run into cases where the Docstring not enough
+  for you use case.  I often run into cases where the I turned my nose up at this
+  one, prior to seeing the
+tags:
+- python
+- bash
+- ipython
+templateKey: blog-post
+title: Ipython Ninjitsu
+today: 2022-05-07
+year: 2020
+---
+
+* ?docstring
+* ??sourcecode
+* %run
+* %debug
+* %autoreload
+* %history
+* autoformat
+* %reset
+* !shell commands
+
+## ?docstring
+
+Stop going to google everytime your stuck and stay in your workflow.  The
+ipython `?` is a superhero for productivity and staying on task.
+
+``` python
+from kedro.pipeline import Pipeline
+Pipeline?
+
+Init signature:
+Pipeline(
+    nodes: Iterable[Union[kedro.pipeline.node.Node, ForwardRef('Pipeline')]],
+    *,
+    tags: Union[str, Iterable[str]] = None,
+)
+Docstring:
+A ``Pipeline`` defined as a collection of ``Node`` objects. This class
+treats nodes as part of a graph representation and provides inputs,
+outputs and execution order.
+Init docstring:
+Initialise ``Pipeline`` with a list of ``Node`` instances.
+
+Args:
+    nodes: The iterable of nodes the ``Pipeline`` will be made of. If you
+        provide pipelines among the list of nodes, those pipelines will
+        be expanded and all their nodes will become part of this
+        new pipeline.
+    tags: Optional set of tags to be applied to all the pipeline nodes.
+
+Raises:
+    ValueError:
+        When an empty list of nodes is provided, or when not all
+        nodes have unique names.
+    CircularDependencyError:
+        When visiting all the nodes is not
+        possible due to the existence of a circular dependency.
+:
+```
+
+**Note** This does jump you into a pager, a j,k or up, down to navigate, q to quit.
+
+
+## ??sourcecode
+
+Docstring not enough for you use case.  I often run into cases where the
+docstring is not clear enough and I need to see the implementation for myself
+to see what a function does.
+
+## %run
+
+I turned my nose up at this one, prior to seeing the famous [I don't like
+notebooks](https://www.youtube.com/watch?v=7jiPeIFXb6U) by
+[Joel Grus](https://joelgrus.com/).  My first snobby reaction was that
+developing modules and using autoreload was superior.  I have since realized
+there is a place for `%run`, and it can cut down on some keystrokes to import,
+setup, and run even when developing in modules.
+
+## %debug
+
+ipython comes with a post-mortem debugger, and it can be a lifesaver.  If we
+have a long running function that runs into an error it can be a complete buzzkill.
+
+``` python
+def long_func():
+   import time
+   time.sleep(12)
+   n = 12
+   df = pd.Data({'a': range(n)})
+   return df
+
+long_func()
+```
+
+## %reset
+
+
+  <div class="onelinelink-wrapper">
+      <a class="onelinelink" href="https://waylonwalker.com/reset-ipython/">
+          <img style="float: right;" align='right' src="https://images.waylonwalker.com/reset-ipython-og_250x140.png" alt="article cover for 
+ Reclaim memory usage in Jupyter
+"/>
+          <p><strong>
+ Reclaim memory usage in Jupyter
+</strong></p>
+      </a>
+  </div>
+
+
+## %autoreload
+
+
+  <div class="onelinelink-wrapper">
+      <a class="onelinelink" href="https://waylonwalker.com/autoreload-ipython/">
+          <img style="float: right;" align='right' src="https://images.waylonwalker.com/autoreload-ipython-og_250x140.png" alt="article cover for 
+ Autoreload in Ipython
+"/>
+          <p><strong>
+ Autoreload in Ipython
+</strong></p>
+      </a>
+  </div>
+
+
+``` python
+c.InteractiveShellApp.extensions = ["autoreload"]
+c.InteractiveShellApp.exec_lines = ["%autoreload 2"]
+c.InteractiveShellApp.exec_lines.append(
+    'print("Warning: disable autoreload in ipython_config.py to improve performance.")'
+)
+```
+
+> place this in your ~/.ipython/profile_default/ipython_config.py to auto reload without needing to run the magic every time
+
+## autoformat
+
+This is a relatively new feature to ipython.  I really enjoy it, as the time
+that I need the most help autoformatting my code is riffing on an ad hoc
+analysis at the command line.
+
+``` python
+c.TerminalInteractiveShell.autoformatter = "black"
+```
+
+> place this in your ~/.ipython/profile_default/ipython_config.py to autoformat with black by default
+
+## new prompt
+
+## reverse history search
+
+_Control R_
+
+## Want automatic imports??
+
+
+  <div class="onelinelink-wrapper">
+      <a class="onelinelink" href="https://waylonwalker.com/pyflyby/">
+          <img style="float: right;" align='right' src="https://images.waylonwalker.com/pyflyby-og_250x140.png" alt="article cover for 
+ Smoother Python with automatic imports | pyflyby
+"/>
+          <p><strong>
+ Smoother Python with automatic imports | pyflyby
+</strong></p>
+      </a>
+  </div>
+
+
+> This article covers how I setup automatic imports in ipython

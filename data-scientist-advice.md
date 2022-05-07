@@ -1,0 +1,53 @@
+---
+content: ''
+cover: ''
+date: 2020-02-26
+datetime: 2020-02-26 00:00:00+00:00
+description: Learn the business Learn the business Learn Git Learn Git Your code does
+  not need to be amazing Your code does not need to be amazing Keep Learning Keep
+  Learnin
+long_description: Learn the business Learn the business Learn Git Learn Git Your code
+  does not need to be amazing Your code does not need to be amazing Keep Learning
+  Keep Learning You dont have to start out as a git wizard with the cleanest possible
+  commit history.  A
+now: 2022-05-07 21:32:25.894261
+path: pages/blog/data-scientist-advice.md
+slug: data-scientist-advice
+status: published
+super_description: 'Learn the business Learn the business Learn Git Learn Git Your
+  code does not need to be amazing Your code does not need to be amazing Keep Learning
+  Keep Learning You dont have to start out as a git wizard with the cleanest possible
+  commit history.  At first dont let yourself get too wrapped up in it, the most important
+  part is that you make commits.  You will find needs for more advanced stuff later.
+  You dont have to start out as a git wizard with the cleanest possible commit history.  At
+  first '
+tags:
+- data
+templateKey: blog-post
+title: What is YOUR Advice for New Data Scientists
+today: 2022-05-07
+year: 2020
+---
+
+* Learn the business
+* Learn Git
+* Your code does not need to be amazing
+* Keep Learning
+
+## Learn Git
+
+You dont have to start out as a git wizard with the cleanest possible commit history.  At first dont let yourself get too wrapped up in it, the most important part is that you make commits.  You will find needs for more advanced stuff later.
+
+
+``` bash
+git add .
+git commit -m "FEAT added new function to calculate revenue by product family"
+git push
+```
+
+Get comfortable with this, then learn how to `branch`, `rebase`, `stash`, etc...
+
+
+## Your code does not need to be amazing
+
+Get the job done.  Keep it in small bite size pieces.  Make readable function definitions and variable names.  You will thank yourself for naming things well later.  Readability counts more than performance in most cases of data science.  If it gets the job done try not to over worry about things like performance.  A few extra seconds to clean a dataset or build a model is not worth hours of your time.  As you go you will have cases that performance is more critical and you will learn what to do from the start to avoid them.

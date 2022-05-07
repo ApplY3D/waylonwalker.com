@@ -1,0 +1,37 @@
+---
+canonical_url: https://waylonwalker.com/til/ansible_install_if_not_callable/
+cover_image: https://images.waylonwalker.com/til/ansible_install_if_not_callable.png
+description: Part of my neovim setup requires having the  Part of my neovim setup
+  requires having the  re-installing a bunch of things that are already installed
+  can be quit
+published: true
+tags:
+- python
+- ansible
+title: Installing packages with ansible only if they do not exist
+---
+
+Part of my neovim setup requires having the `black` python formatter installed and callable.  I install it with `pipx` so that I don't have to manage a virtual environment and have it available everywhere.  So far this works well for me, if there are ever breaking changes I may need to rethink this.
+
+re-installing a bunch of things that are already installed can be quite a waste and really add up to my ansible run time, so for most of my ansible tasks that install a command like this I have been following this pattern.
+
+1. check if the command is installed with `command -v <command>`
+2. register that step
+3. ignore if that step fails
+4. add a `when: <xxx>_exists is failed` condition to the step that
+   installs that command.
+
+``` yaml
+- name: check is black installed
+  shell: command -v black
+  register: black_exists
+  ignore_errors: yes
+
+- name: install black
+  when: black_exists is failed
+  shell: pipx install black
+```
+
+https://www.youtube.com/watch?v=MCFg6-W5SBI
+
+> I made a video based on this post, check it out if its your thing

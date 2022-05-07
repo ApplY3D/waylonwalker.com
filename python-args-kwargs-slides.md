@@ -1,0 +1,83 @@
+---
+content: ''
+cover: ''
+date: 2020-07-02
+datetime: 2020-07-02 00:00:00+00:00
+description: 'Python  Python  I generally post these as a carousel on LinkedIn based
+  on a full article.  Let mw know what you think of it shown inside of a blog  I generally '
+long_description: 'Python  Python  I generally post these as a carousel on LinkedIn
+  based on a full article.  Let mw know what you think of it shown inside of a blog  I
+  generally post these as a carousel on LinkedIn based on a full article.  Let mw
+  know what you think '
+now: 2022-05-07 21:32:25.893039
+path: pages/blog/python-args-kwargs-slides.md
+slug: python-args-kwargs-slides
+status: published
+super_description: 'Python  Python  I generally post these as a carousel on LinkedIn
+  based on a full article.  Let mw know what you think of it shown inside of a blog  I
+  generally post these as a carousel on LinkedIn based on a full article.  Let mw
+  know what you think of it shown inside of a blog  See the full article  See the
+  full article '
+tags:
+- python
+templateKey: blog-post
+title: SLIDES - understanding python \*args and \*\*kwargs
+today: 2022-05-07
+year: 2020
+---
+
+Python `*args` and `**kwargs` are super useful tools, that when used properly
+can make you code much simpler and easier to maintain.  Large manual
+conversions from a dataset to function arguments can be packed and unpacked
+into lists or dictionaries. Beware though, this power **can** lead to some
+really unreadable/unusable code if done wrong.
+
+I generally post these as a carousel on LinkedIn based on a full article.  Let mw know what you think of it shown inside of a blog [@_waylonwalker](https://twitter.com/_WaylonWalker).
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6678285914826911744" height="587" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+
+[![python args and kwargs](https://images.waylonwalker.com/python-args-kwargs.png)](https://waylonwalker.com/python-args-kwargs)
+> See the full article [here](https://waylonwalker.com/python-args-kwargs)
+
+## Slides
+
+---
+
+![1](https://images.waylonwalker.com/args-kwargs-slide-1.png)
+
+---
+
+![2](https://images.waylonwalker.com/args-kwargs-slide-2.png)
+
+---
+
+![3](https://images.waylonwalker.com/args-kwargs-slide-3.png)
+
+---
+
+![4](https://images.waylonwalker.com/args-kwargs-slide-4.png)
+
+---
+
+![5](https://images.waylonwalker.com/args-kwargs-slide-5.png)
+
+---
+
+![6](https://images.waylonwalker.com/args-kwargs-slide-6.png)
+
+---
+
+![7](https://images.waylonwalker.com/args-kwargs-slide-7.png)
+
+---
+
+![8](https://images.waylonwalker.com/args-kwargs-slide-8.png)
+
+---
+
+![9](https://images.waylonwalker.com/args-kwargs-slide-9.png)
+
+---
+
+![10](https://images.waylonwalker.com/args-kwargs-slide-10.png)

@@ -1,0 +1,86 @@
+---
+Tags:
+- cli
+- linux
+- tmux
+content: ''
+cover: ''
+date: 2021-08-03
+datetime: 2021-08-03 00:00:00+00:00
+description: https://youtu.be/WRLRiQDjVIA https://youtu.be/WRLRiQDjVIA So you have
+  been working on your tmux workflow, you So you have been working on your tmux workflow,
+  yo
+long_description: https://youtu.be/WRLRiQDjVIA https://youtu.be/WRLRiQDjVIA So you
+  have been working on your tmux workflow, you So you have been working on your tmux
+  workflow, you Let Let There is a default keybinding that you can use  There is a
+  default keybinding th
+now: 2022-05-07 21:32:25.894105
+path: pages/blog/tmux-rename-session.md
+slug: tmux-rename-session
+status: published
+super_description: https://youtu.be/WRLRiQDjVIA https://youtu.be/WRLRiQDjVIA So you
+  have been working on your tmux workflow, you So you have been working on your tmux
+  workflow, you Let Let There is a default keybinding that you can use  There is a
+  default keybinding that you can use  I I https://waylonwalker.com/tmux-nav-2021/
+  https://waylonwalker.com/tmux-nav-2021/ for more information on how I navigate tmux,
+  check out this full post for more information on how I navigate tmux, check out
+  this full post Also check
+tags: []
+templateKey: blog-post
+title: tmux rename session
+today: 2022-05-07
+year: 2021
+---
+
+https://youtu.be/WRLRiQDjVIA
+
+So you have been working on your tmux workflow, you've dropped a too many
+window workflow for scoping work that belongs together into separate sessions,
+but you cannot remember what session your work is in. If your diligent you have
+named your window when you created it, but sometimes its intent has changed or
+your were just plain too lazy at the time for the extra characters needed to
+name it.  Don't worry we can still give that session a descriptive name.
+
+Let's rename some sessions in the terminal.
+
+``` bash
+# rename the current session to me
+tmux rename-session me
+
+# rename the me session to scratch
+tmux rename-session -t me scratch
+```
+
+There is a default keybinding that you can use `<prefix>+$` to rename the
+current session in the tmux command line.
+
+``` bash
+bind-key          $ command-prompt -I #S "rename-session '%%'"
+```
+
+I've also had this keybinding kicking around for years, but I rarely use it
+anymore. You will see why in an upcoming video.
+
+``` python
+bind -n M-W command-prompt "rename-session '%%'"
+```
+
+
+  <div class="onelinelink-wrapper">
+      <a class="onelinelink" href="https://waylonwalker.com/tmux-nav-2021/">
+          <img style="float: right;" align='right' src="https://images.waylonwalker.com/tmux-nav-2021-og_250x140.png" alt="article cover for 
+ How I navigate tmux in 2021
+"/>
+          <p><strong>
+ How I navigate tmux in 2021
+</strong></p>
+      </a>
+  </div>
+
+
+> for more information on how I navigate tmux, check out this full post
+
+
+Also check out the full YouTube
+[tmux-playlist](https://www.youtube.com/playlist?list=PLTRNG6WIHETB4reAxbWza3CZeP9KL6Bkr)
+to see all of the videos in this series.
